@@ -4,8 +4,8 @@
   <thead>
     <tr>
       <th>Quiz</th>
+      <th>Content</th>
       <th>Score</th>
-      <th></th>
       <th></th>
       <th></th>
     </tr>
@@ -15,6 +15,7 @@
     <% @questions.each do |question| %>
       <tr>
         <td><%= question.quiz_id %></td>
+        <td><%= question.content %></td>
         <td><%= question.score %></td>
         <td><%= link_to 'Show', question %></td>
         <td><%= link_to 'Edit', edit_question_path(question) %></td>
