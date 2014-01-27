@@ -1,4 +1,4 @@
-<h5 class="subtitle">Android vs iPhone</h5>
+<h5 class="subtitle"><span class="android">Android</span> vs <span class="iphone">iPhone</span></h5>
 <!-- <h4 class="fits">Answer the questions for your Results.</h4> -->
 <div class="wrap-question">
   <% @questions.each do |question| %>
@@ -6,7 +6,7 @@
       <div class="answer">
         <% question.answers.each do |answer| %>
 	      <ul>
-	      <li><input type="radio" name=<%= question.id %> ><%= link_to answer.content, "#" %></input>
+	      <li><input type="radio" name=<%= question.id %> ><label_for=<%= link_to answer.content, "#" %></input></label>
 	      </li>
 	      </ul>
         <% end %>

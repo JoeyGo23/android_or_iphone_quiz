@@ -16,10 +16,18 @@
 
 .subtitle {
   text-align: center;
+  color: gray;
   font-size: 14pt;
   margin: 0 0;
   padding: 0 0;
   text-justify: auto;
+  background-color: black;
+}
+.subtitle .android {
+  color: green;
+}
+.subtitle .iphone {
+  color: white;
 }
 
 .fits {
