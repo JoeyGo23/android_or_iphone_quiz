@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Androidquiz</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <title>Android_or_iPhone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true  %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie|Rock+Salt|Annie+Use+Your+Telescope|Allerta+Stencil' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
+<p><%= current_user.name if current_user %></p>
 <%= yield %>
 
 </body>

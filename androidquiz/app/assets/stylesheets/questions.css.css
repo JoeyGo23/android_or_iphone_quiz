@@ -1,0 +1,37 @@
+@charset "UTF-8";
+h1 {
+  margin-bottom: 50px;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0px;
+}
+ul li {
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 24pt;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  width: 650px;
+  margin: 0px auto;
+  padding: 5px 0px;
+  position: relative;
+}
+ul li .answer {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+ul li:hover {
+  background-color: #36ffe0;
+}
+ul li:hover:before {
+  content: "☞";
+  padding-left: 15px;
+  color: black;
+  display: inline-block;
+  float: left;
+  position: absolute;
+  left: 2px;
+}

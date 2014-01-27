@@ -1,3 +1,48 @@
+// Place all the styles related to the Questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$thin-border: 4px solid black;
+$primary-color: rgb(54, 255, 224);
+$secondary-color: rgb(213, 255, 92);
+$transparent-background: rgba(255, 255, 255, 0.2);
+
+h1 {
+  margin-bottom: 50px;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0px;
+  li {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 24pt;
+    background: $transparent-background;
+    border-radius: 10px;
+    width: 650px;
+    margin: 0px auto;
+    padding: 5px 0px;
+    position: relative;
+    .answer {
+      color: black;
+      text-decoration: none;
+      position: relative;
+    }
+    &:hover {
+      background-color: $primary-color;
+      &:before {
+        content: "☞";
+        padding-left: 15px;
+        color: black;
+        display: inline-block;
+        float: left;
+        position: absolute;
+        left: 2px;
+      }
+    }
+  }
+}
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
