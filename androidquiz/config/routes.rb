@@ -1,4 +1,5 @@
 Androidquiz::Application.routes.draw do
+  root to: "users#new"
   resources :quizzes
 
   resources :answers

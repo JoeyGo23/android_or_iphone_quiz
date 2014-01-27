@@ -1,14 +1,11 @@
-<p id="notice"><%= notice %></p>
+<h1><%= @question.content %></h1>
 
-<p>
-  <strong>Quiz:</strong>
-  <%= @question.quiz_id %>
-</p>
-
-<p>
-  <strong>Score:</strong>
-  <%= @question.score %>
-</p>
-
-<%= link_to 'Edit', edit_question_path(@question) %> |
-<%= link_to 'Back', questions_path %>
+<% @question.answers.each do |answer| %>
+  <ul>
+    <% if current_user.answered_question?(@question.id) %>
+      <li><%= answer.content %></li>
+    <% else %>
+      <li><%= link_to answer.content, result_question_url(answer.id, score: answer.score, question_id: @question.id), method: 'post', :class => "answer" %></li>
+    <% end %>
+  </ul>
+<% end %>

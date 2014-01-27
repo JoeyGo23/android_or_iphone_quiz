@@ -29,32 +29,32 @@ Question.create(content: "In school, you were more into:", quiz_id: 1)
 Answer.create(content: "Are open to many brands", question_id: 1, score: 1)
 Answer.create(content: "Tend to be brand loyal", question_id: 1, score: 2)
 
-Answer.create(content: "A saver", question_id: 1, score: 1)
-Answer.create(content: "A spender", question_id: 1, score: 2)
+Answer.create(content: "A saver", question_id: 2, score: 1)
+Answer.create(content: "A spender", question_id: 2, score: 2)
 
-Answer.create(content: "A beautiful device with an average amound of features", question_id: 1, score: 1)
-Answer.create(content: "An average looking device with many features", question_id: 1, score: 2)
+Answer.create(content: "A beautiful device with an average amound of features", question_id: 3, score: 1)
+Answer.create(content: "An average looking device with many features", question_id: 3, score: 2)
 
-Answer.create(content: "Text", question_id: 1, score: 1)
-Answer.create(content: "Email", question_id: 1, score: 2)
+Answer.create(content: "Text", question_id: 4, score: 1)
+Answer.create(content: "Email", question_id: 4, score: 2)
 
-Answer.create(content: "Yes", question_id: 1, score: 1)
-Answer.create(content: "No", question_id: 1, score: 2)
+Answer.create(content: "Yes", question_id: 5, score: 1)
+Answer.create(content: "No", question_id: 5, score: 2)
 
-Answer.create(content: "A noise of some sort", question_id: 1, score: 1)
-Answer.create(content: "A song", question_id: 1, score: 2)
+Answer.create(content: "A noise of some sort", question_id: 6, score: 1)
+Answer.create(content: "A song", question_id: 6, score: 2)
 
-Answer.create(content: "One", question_id: 1, score: 1)
-Answer.create(content: "More than one", question_id: 1, score: 2)
+Answer.create(content: "One", question_id: 7, score: 1)
+Answer.create(content: "More than one", question_id: 7, score: 2)
 
-Answer.create(content: "Costco", question_id: 1, score: 1)
-Answer.create(content: "Whole Foods", question_id: 1, score: 2)
+Answer.create(content: "Costco", question_id: 8, score: 1)
+Answer.create(content: "Whole Foods", question_id: 8, score: 2)
 
-Answer.create(content: "An introvert", question_id: 1, score: 1)
-Answer.create(content: "An extrovert", question_id: 1, score: 2)
+Answer.create(content: "An introvert", question_id: 9, score: 1)
+Answer.create(content: "An extrovert", question_id: 9, score: 2)
 
-Answer.create(content: "Reading and art", question_id: 1, score: 1)
-Answer.create(content: "Math and science", question_id: 1, score: 2)
+Answer.create(content: "Reading and art", question_id: 10, score: 1)
+Answer.create(content: "Math and science", question_id: 10, score: 2)
 
 
 
