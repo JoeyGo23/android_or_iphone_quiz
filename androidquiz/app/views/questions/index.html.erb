@@ -4,7 +4,7 @@
 
   <% question.answers.each do |answer| %>
     <ul>
-      <li><%= link_to answer.content, "#" %>
+      <li><input type="radio"><%= link_to answer.content, "#" %></input
       </li>
     </ul>
   <% end %>

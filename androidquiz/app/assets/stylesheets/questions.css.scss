@@ -16,7 +16,7 @@ ul {
   list-style-type: none;
   padding: 0px;
   li {
-    font-family: 'Annie Use Your Telescope', cursive;
+    font-family: 'Wendy One', cursive;
     font-size: 24pt;
     background: $transparent-background;
     border-radius: 10px;
@@ -30,7 +30,7 @@ ul {
       position: relative;
     }
     &:hover {
-      background-color: $primary-color;
+      // background-color: $primary-color;
       &:before {
         content: "☞";
         padding-left: 15px;
