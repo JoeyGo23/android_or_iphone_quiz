@@ -6,10 +6,15 @@
       <div class="answer">
         <% question.answers.each do |answer| %>
 	      <ul>
-	      <li><input type="radio" name=<%= question.id %> ><label_for=<%= link_to answer.content, "#" %></input></label>
+	      <li><input class="input" type="radio" name=<%= question.id %>, true>
+         
+         <%= answer.content %>
 	      </li>
 	      </ul>
         <% end %>
     <% end %>
   </div>
+  <input class="submit-button" type=submit>
 </div>
+
+
