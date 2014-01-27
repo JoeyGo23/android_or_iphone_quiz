@@ -1,13 +1,14 @@
 <h1>Listing questions</h1>
-<% @questions.each do |question| %>
 <div class="wrap-question">
-  <div class="question" > <%= question.content %> </div>
-
-  <% question.answers.each do |answer| %>
-    <ul>
-      <li><input type="radio"><%= link_to answer.content, "#" %></input>
-      </li>
-    </ul>
-  <% end %>
-<% end %>
+  <% @questions.each do |question| %>
+    <div class="question" > <%= question.content %> </div>
+      <div class="answer">
+        <% question.answers.each do |answer| %>
+	      <ul>
+	      <li><input type="radio" name=<%= question.id %> ><%= link_to answer.content, "#" %></input>
+	      </li>
+	      </ul>
+        <% end %>
+    <% end %>
+  </div>
 </div>

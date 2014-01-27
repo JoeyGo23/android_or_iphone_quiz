@@ -2,19 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$thin-border: 4px solid black;
-$primary-color: rgb(54, 255, 224);
-$secondary-color: rgb(213, 255, 92);
-$transparent-background: rgba(255, 255, 255, 0.2);
+// $thin-border: 4px solid black;
+// $primary-color: rgb(54, 255, 224);
+// $secondary-color: rgb(213, 255, 92);
+// $transparent-background: rgba(255, 255, 255, 0.2);
 
 h1 {
   margin-bottom: 50px;
 }
 
 .question{
-	font-size: 20px;
+	font-size: 24pt;
 	text-align: center;
 	font-family: 'Medula One', cursive;
+	font-color: gray;
+	background-color: rgb(182, 181, 187);
+	border: 5px solid black;
+	vertical-align: center;
+	padding-bottom: 5px;
 }
 
 .wrap-question{
@@ -28,8 +33,8 @@ ul {
   padding: 0px;
   li {
     font-family: 'Wendy One', cursive;
-    font-size: 24pt;
-    background: $transparent-background;
+    font-size: 18pt;
+    // background: $transparent-background;
     border-radius: 10px;
     width: 100%;
     margin: 0px auto;
@@ -40,19 +45,20 @@ ul {
       color: black;
       text-decoration: none;
       position: relative;
+      background-color: white;
     }
-    &:hover {
-      // background-color: $primary-color;
-      &:before {
-        content: "☞";
-        padding-left: 15px;
-        color: black;
-        display: inline-block;
-        float: left;
-        position: absolute;
-        left: 2px;
-      }
-    }
+    // &:hover {
+    //   // background-color: $primary-color;
+    //   &:before {
+    //     content: "☞";
+    //     padding-left: 15px;
+    //     color: black;
+    //     display: inline-block;
+    //     float: left;
+    //     position: absolute;
+    //     left: 2px;
+    //   }
+    // }
   }
 }
 // Place all the styles related to the questions controller here.

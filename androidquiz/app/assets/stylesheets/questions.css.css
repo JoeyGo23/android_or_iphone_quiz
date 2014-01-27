@@ -1,12 +1,16 @@
-@charset "UTF-8";
 h1 {
   margin-bottom: 50px;
 }
 
 .question {
-  font-size: 20px;
+  font-size: 24pt;
   text-align: center;
   font-family: 'Medula One', cursive;
+  font-color: gray;
+  background-color: #b6b5bb;
+  border: 5px solid black;
+  vertical-align: center;
+  padding-bottom: 5px;
 }
 
 .wrap-question {
@@ -21,8 +25,7 @@ ul {
 }
 ul li {
   font-family: 'Wendy One', cursive;
-  font-size: 24pt;
-  background: rgba(255, 255, 255, 0.2);
+  font-size: 18pt;
   border-radius: 10px;
   width: 100%;
   margin: 0px auto;
@@ -34,13 +37,5 @@ ul li .answer {
   color: black;
   text-decoration: none;
   position: relative;
-}
-ul li:hover:before {
-  content: "☞";
-  padding-left: 15px;
-  color: black;
-  display: inline-block;
-  float: left;
-  position: absolute;
-  left: 2px;
+  background-color: white;
 }
