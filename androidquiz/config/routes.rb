@@ -1,14 +1,11 @@
 Androidquiz::Application.routes.draw do
   root to: "users#new"
-  resources :quizzes
-
-  resources :answers
-
-  resources :results
-
-  resources :questions
-
   resources :users
+  resources :answers
+  resources :questions do
+    member { post :result }
+  end
+  resources :quizzes
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
