@@ -5,7 +5,7 @@
     <% if current_user.answered_question?(@question.id) %>
       <li><%= answer.content %></li>
     <% else %>
-      <li><%= link_to answer.content, result_question_url(answer.id, score: answer.score, question_id: @question.id), method: 'post', :class => "answer" %></li>
+      <li><%= link_to answer.content, result_questions_url(answer.id, score: answer.score, question_id: @question.id), method: 'post', :class => "answer" %></li>
     <% end %>
   </ul>
   

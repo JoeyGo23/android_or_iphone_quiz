@@ -11,6 +11,17 @@ h1 {
   margin-bottom: 50px;
 }
 
+.question{
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Medula One', cursive;
+}
+
+.wrap-question{
+	border: 5px solid black;
+	width: 100%;
+}
+
 ul {
   text-align: center;
   list-style-type: none;
@@ -20,8 +31,9 @@ ul {
     font-size: 24pt;
     background: $transparent-background;
     border-radius: 10px;
-    width: 650px;
+    width: 100%;
     margin: 0px auto;
+    text-align: center;
     padding: 5px 0px;
     position: relative;
     .answer {

@@ -3,6 +3,17 @@ h1 {
   margin-bottom: 50px;
 }
 
+.question {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Medula One', cursive;
+}
+
+.wrap-question {
+  border: 5px solid black;
+  width: 100%;
+}
+
 ul {
   text-align: center;
   list-style-type: none;
@@ -13,8 +24,9 @@ ul li {
   font-size: 24pt;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-  width: 650px;
+  width: 100%;
   margin: 0px auto;
+  text-align: center;
   padding: 5px 0px;
   position: relative;
 }
@@ -26,7 +38,7 @@ ul li .answer {
 ul li:hover:before {
   content: "☞";
   padding-left: 15px;
-/*  color: black;*/
+  color: black;
   display: inline-block;
   float: left;
   position: absolute;
