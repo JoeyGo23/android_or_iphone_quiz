@@ -2,19 +2,20 @@
 <!-- <h4 class="fits">Answer the questions for your Results.</h4> -->
 <div class="wrap-question">
   <% @questions.each do |question| %>
-    <div class="question" > <%= question.content %> </div>
-      <div class="answer">
-        <% question.answers.each do |answer| %>
-	      <ul>
-	      <li><input class="input" type="radio" name=<%= question.id %>, true>
-         
-         <%= answer.content %>
-	      </li>
-	      </ul>
-        <% end %>
+    <div class="question" >
+     <%= question.content %> 
+ 	</div>
+    <div class="answer">
+     <% question.answers.each do |answer| %>
+	<ul>
+	  <li>
+		<%= radio_button_tag( question.id, answer.score ) %>
+		<%= label_tag( question.id.to_s+"_"+answer.score.to_s , answer.content) %>
+	  </li>
+	</ul>
     <% end %>
-  </div>
-  <input class="submit-button" type=submit>
+      </div>
+  <% end %>
 </div>
 
 

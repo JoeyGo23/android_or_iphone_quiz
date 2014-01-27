@@ -5,5 +5,11 @@
   <%= @user.name %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<p>
+  <strong>Score:</strong>
+  <%= @user.score %>
+</p>
+<h1>You have a <%= @score %>% chance to survive Chiraq</h1>
+
+<a href="https://twitter.com/share?text=I have a <%= @score %> percent chance of surviving Chiraq!" class="twitter-share-button" data-lang="en" data-count="none">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

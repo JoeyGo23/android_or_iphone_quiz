@@ -1,5 +1,7 @@
 Androidquiz::Application.routes.draw do
   root to: "users#new"
+  get '/users/:id', to: 'patients#show', as: 'patient'
+
   resources :users
   resources :answers
   resources :questions do
